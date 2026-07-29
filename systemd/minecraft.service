@@ -1,0 +1,12 @@
+[Unit]
+Description=Paper Minecraft Server
+After=network.target
+
+[Service]
+User=vahram
+WorkingDirectory=/home/vahram/Paper
+ExecStart=/bin/bash /home/vahram/Paper/start.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
